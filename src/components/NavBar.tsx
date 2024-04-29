@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div className="flex justify-between items-center">
       {/* Left */}
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-3 items-center">
         <Icon
           sx={
             resolvedTheme == "dark"
@@ -28,8 +28,13 @@ export default function NavBar() {
         </div>
       </div>
 
+      {/* Middle */}
+      <div className="text-lg font-serif font-thin hidden md:block">
+        Learn a language within 50 most used sentences 
+      </div>
+
       {/* Right */}
-      <div className="flex items-center">
+      <div className="flex items-center gap-3">
         <NativeLanguageSelect />
         <DarkModeSwitch />
       </div>

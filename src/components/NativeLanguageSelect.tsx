@@ -15,17 +15,9 @@ export default function NativeLanguageSelect() {
   };
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 160 }}>
-        <InputLabel id="demo-simple-select-helper-label">
-          Native Language
-        </InputLabel>
-        <Select
-          labelId="demo-simple-select-helper-label"
-          id="demo-simple-select-helper"
-          value={age}
-          label="Native Language"
-          onChange={handleChange}
-        >
+      <FormControl sx={{ minWidth: 160 }}>
+        <InputLabel className="text-sm">Native Language</InputLabel>
+        <Select value={age} label="Native Language" onChange={handleChange}>
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
