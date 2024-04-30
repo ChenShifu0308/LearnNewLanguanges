@@ -24,11 +24,12 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
-          {" "}
           <ThemeProviders>
-            <div className="w-full h-full p-2 md:max-w-7xl md:mx-auto md:p-4">
+            <div className="w-full h-full md:max-w-7xl md:mx-auto">
               <NavBar />
-              {children}
+              <div className="h-[calc(100vh-88px)] max-w-7xl mx-auto">
+                {children}
+              </div>
             </div>
           </ThemeProviders>
         </NextIntlClientProvider>

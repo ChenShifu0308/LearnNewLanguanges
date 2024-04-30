@@ -5,11 +5,14 @@ import { Icon } from "@mui/material";
 import { useTheme } from "next-themes";
 import { common } from "@mui/material/colors";
 import NativeLanguageSelect from "./NativeLanguageSelect";
+import { useTranslations } from "next-intl";
 
 export default function NavBar() {
   const { resolvedTheme } = useTheme();
+  const t = useTranslations();
+
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center h-20 w-full mx-auto px-3">
       {/* Left */}
       <div className="flex gap-3 items-center">
         <Icon
@@ -30,7 +33,7 @@ export default function NavBar() {
 
       {/* Middle */}
       <div className="text-lg font-serif font-thin hidden md:block">
-        Learn a language within 50 most used sentences 
+        {t("slogan")}
       </div>
 
       {/* Right */}

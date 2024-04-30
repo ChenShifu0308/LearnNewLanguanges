@@ -8,14 +8,14 @@ const darkTheme = createTheme({
     mode: "dark",
     // primary: grey,
     // divider: grey[200],
-    // background: {
-    //   default: blueGrey[700],
-    //   paper: blueGrey[700],
-    // },
-    // text: {
-    //   primary: grey[100],
-    //   secondary: grey[200],
-    // },
+    background: {
+      default: grey[800],
+      paper: grey[800],
+    },
+    text: {
+      primary: grey[50],
+      secondary: grey[50],
+    },
   },
 });
 const lightTheme = createTheme({
@@ -23,14 +23,14 @@ const lightTheme = createTheme({
     mode: "light",
     // primary: grey,
     // divider: grey[700],
-    // background: {
-    //   default: grey[50],
-    //   paper: grey[50],
-    // },
-    // text: {
-    //   primary: grey[900],
-    //   secondary: grey[600],
-    // },
+    background: {
+      default: grey[50],
+      paper: grey[50],
+    },
+    text: {
+      primary: grey[800],
+      secondary: grey[800],
+    },
   },
 });
 /* A wrapper for MUI ThemeProvider to be compatible with next-themes */
