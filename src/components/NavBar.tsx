@@ -37,7 +37,7 @@ export default function NavBar() {
       </div>
 
       {/* Right */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 z-20">
         <NativeLanguageSelect />
         <DarkModeSwitch />
       </div>
