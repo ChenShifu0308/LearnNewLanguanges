@@ -22,7 +22,7 @@ export const config = {
   // Match only internationalized pathnames
   matcher: [
     "/",
-    "/(en|zh|es|fr|de|it|ja|ko|pt|ru)/:path*",
+    "/(en|zh|es|fr|de|it|ja|ko|pt|ru|ar)/:path*",
     "/((?!_next|_vercel|.*\\..*).*)",
   ],
 };

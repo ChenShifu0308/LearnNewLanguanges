@@ -9,6 +9,7 @@ export enum Language {
   Korean = "ko",
   Portuguese = "pt",
   Russian = "ru",
+  Arabic = "ar",
 }
 
 export const selectOptions = [
@@ -22,4 +23,5 @@ export const selectOptions = [
   { value: Language.Korean, label: "Korean" },
   { value: Language.Portuguese, label: "Portuguese" },
   { value: Language.Russian, label: "Russian" },
+  { value: Language.Arabic, label: "Arabic" },
 ];
