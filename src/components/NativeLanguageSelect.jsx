@@ -1,10 +1,10 @@
 "use client";
 import { selectOptions } from "@/data/languages";
 import { useLocale } from "next-intl";
-import { useParams, usePathname, useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
-import Select from "react-select";
 import { useTheme } from "next-themes";
+import { usePathname, useRouter } from "next/navigation";
+import { useTransition } from "react";
+import Select from "react-select";
 
 /* After the native language is selected. the whole app language would be changed. */
 export default function NativeLanguageSelect() {

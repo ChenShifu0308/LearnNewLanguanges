@@ -1,3 +1,5 @@
+"use client";
+
 import { CssBaseline } from "@mui/material";
 import { blueGrey, grey } from "@mui/material/colors";
 import { ThemeProvider, createTheme } from "@mui/material/styles";

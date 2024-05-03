@@ -1,6 +1,4 @@
-"use client";
 import PhraseItem from "@/components/PhraseItem";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
   return (

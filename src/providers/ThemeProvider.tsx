@@ -1,13 +1,9 @@
-"use client";
-
 import { ThemeProvider, useTheme } from "next-themes";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiThemeProvider from "./MuiThemeProvider";
 
 export default function ThemeProviders({ children }: any) {
-  const { theme, setTheme, systemTheme } = useTheme();
-  console.log("ThemeProvider:" + theme);
   return (
     <ThemeProvider defaultTheme="system" attribute="class">
       <MuiThemeProvider>

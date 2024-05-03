@@ -1,11 +1,10 @@
 "use client";
-import React from "react";
-import DarkModeSwitch from "./DarkModeSwitch";
 import { Icon } from "@mui/material";
-import { useTheme } from "next-themes";
 import { common } from "@mui/material/colors";
-import NativeLanguageSelect from "./NativeLanguageSelect";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
+import DarkModeSwitch from "./DarkModeSwitch";
+import NativeLanguageSelect from "./NativeLanguageSelect";
 
 export default function NavBar() {
   const { resolvedTheme } = useTheme();
