@@ -43,7 +43,7 @@ export default function LanguageDialog(props: {
 
   return (
     <Dialog onClose={handleClose} open={open}>
-      <List sx={{ pt: 0 }}>
+      <List sx={{ pt: 0 }} className="px-8">
         {unSelectedLanguages.map((lang) => (
           <ListItem disableGutters key={lang}>
             <ListItemButton onClick={() => handleListItemClick(lang)}>

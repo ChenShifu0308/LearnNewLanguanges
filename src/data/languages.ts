@@ -18,16 +18,16 @@ export enum Language {
 
 export const selectOptions = [
   { value: Language.English, label: "English" },
-  { value: Language.Chinese, label: "Chinese" },
-  { value: Language.Spanish, label: "Spanish" },
-  { value: Language.French, label: "French" },
-  { value: Language.German, label: "German" },
-  { value: Language.Italian, label: "Italian" },
-  { value: Language.Japanese, label: "Japanese" },
-  { value: Language.Korean, label: "Korean" },
-  { value: Language.Portuguese, label: "Portuguese" },
-  { value: Language.Russian, label: "Russian" },
-  { value: Language.Arabic, label: "Arabic" },
+  { value: Language.Chinese, label: "中文" },
+  { value: Language.Spanish, label: "Español" },
+  { value: Language.French, label: "Français" },
+  { value: Language.German, label: "Deutsch" },
+  { value: Language.Italian, label: "Italiano" },
+  { value: Language.Japanese, label: "日本語" },
+  { value: Language.Korean, label: "한국어" },
+  { value: Language.Portuguese, label: "Português" },
+  { value: Language.Russian, label: "Русский" },
+  { value: Language.Arabic, label: "عربي" },
 ];
 
 export function getSentences(language: string): SentenceItem[] {

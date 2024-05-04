@@ -16,25 +16,41 @@ export default function TableHeader() {
 
   return (
     <>
-      {/* <TableHeaderItem className="left-0" >{t("native_language")}</TableHeaderItem> */}
-      <th className="sticky top-0 left-0 z-20 bg-neutral-50 dark:bg-neutral-700 text-sm md:text-lg">
+      <TableHeaderItem className="left-0">
         {t("native_language")}
-      </th>
+      </TableHeaderItem>
+      {/* <th className="sticky top-0 left-0 z-20 bg-neutral-50 dark:bg-neutral-700 text-sm md:text-lg">
+        {t("native_language")}
+      </th> */}
 
       {learningLanguages.map((language, index) => (
-        <TableHeaderItem key={index}>{t(language)}</TableHeaderItem>
+        <TableHeaderItem key={index}>
+          <div className="flex items-center ">
+            <div className="self-center grow">{t(language)}</div>
+            <div
+              className="hover:scale-125  flex justify-center items-center"
+              onClick={() => {
+                setLearningLanguages(
+                  learningLanguages.filter((item) => item !== language)
+                );
+              }}
+            >
+              <Icon style={{ fontSize: 15 }}>close</Icon>
+            </div>
+          </div>
+        </TableHeaderItem>
       ))}
 
       {/* + button */}
       <TableHeaderItem>
         <div
-          className="hover:scale-105"
+          className="hover:scale-105 flex justify-center items-center"
           onClick={() => {
             /* Show Popup Modal to select a target languges */
             setDialogOpen(true);
           }}
         >
-          <Icon style={{ fontSize: 35 }}>add_circle_outlined</Icon>
+          <Icon style={{ fontSize: 25 }}>add_circle_outlined</Icon>
         </div>
       </TableHeaderItem>
 
