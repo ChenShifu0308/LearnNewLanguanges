@@ -40,3 +40,33 @@ export function getSentences(language: string): SentenceItem[] {
       return [];
   }
 }
+
+/* TODO: move all configuration to one class/interface */
+export function getFlag(language: string): string {
+  switch (language) {
+    case "en":
+      return "🇺🇸";
+    case "zh":
+      return "🇨🇳";
+    case "es":
+      return "🇪🇸";
+    case "fr":
+      return "🇫🇷";
+    case "de":
+      return "🇩🇪";
+    case "it":
+      return "🇮🇹";
+    case "ja":
+      return "🇯🇵";
+    case "ko":
+      return "🇰🇷";
+    case "pt":
+      return "🇵🇹";
+    case "ru":
+      return "🇷🇺";
+    case "ar":
+      return "🇸🇦";
+    default:
+      return "🌍";
+  }
+}

@@ -1,8 +1,10 @@
 "use client";
 import { useLanguageOption } from "@/hooks/useLanguageOption";
+import { Language } from "@mui/icons-material";
 import Icon from "@mui/material/Icon";
 import { useTranslations } from "next-intl";
 import React from "react";
+import LanguageDialog from "./LanguageDialog";
 
 /* The header has 2 column at first: The Native language, 
 and a "+" button to add more target language.
@@ -10,6 +12,7 @@ When a user select a new target language, the column increase.*/
 export default function TableHeader() {
   const { learningLanguages, setLearningLanguages } = useLanguageOption();
   const t = useTranslations();
+  const [dialogOpen, setDialogOpen] = React.useState(false);
 
   return (
     <>
@@ -24,8 +27,18 @@ export default function TableHeader() {
 
       {/* + button */}
       <TableHeaderItem>
-        <Icon style={{ fontSize: 35 }}>add_circle</Icon>
+        <div
+          className="hover:scale-105"
+          onClick={() => {
+            /* Show Popup Modal to select a target languges */
+            setDialogOpen(true);
+          }}
+        >
+          <Icon style={{ fontSize: 35 }}>add_circle_outlined</Icon>
+        </div>
       </TableHeaderItem>
+
+      <LanguageDialog open={dialogOpen} setOpen={setDialogOpen} />
     </>
   );
 }
