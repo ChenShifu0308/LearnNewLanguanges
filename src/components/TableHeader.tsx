@@ -44,7 +44,7 @@ export default function TableHeader() {
       {/* + button */}
       <TableHeaderItem>
         <div
-          className="hover:scale-105 flex justify-center items-center"
+          className="hover:scale-105 flex justify-center items-center mx-6"
           onClick={() => {
             /* Show Popup Modal to select a target languges */
             setDialogOpen(true);

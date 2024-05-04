@@ -36,7 +36,7 @@ function TableFirstItem({ children }: any) {
 
 function TableItem({ children }: any) {
   return (
-    <div className="w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center bg-neutral-50 dark:bg-[#424242] p-2 my-4 mx-2 rounded-lg shadow-md hover:shadow-lg">
+    <div className="w-44 md:w-60 lg:w-72 flex flex-col justify-center items-center bg-neutral-50 dark:bg-[#424242] p-2 my-4 mx-2 rounded-lg shadow-md hover:shadow-lg">
       {children}
     </div>
   );

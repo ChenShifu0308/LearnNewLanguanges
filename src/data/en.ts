@@ -5,7 +5,7 @@ export const enSentences: SentenceItem[] = [
     id: 1,
     name: "hello",
     language: "en",
-    sentence: "Hello",
+    sentence: "hello",
     phonetic: "həˈloʊ",
   },
 
@@ -85,7 +85,7 @@ export const enSentences: SentenceItem[] = [
     id: 12,
     name: "i_do_not_understand",
     language: "en",
-    sentence: "I don't understand",
+    sentence: "I don't understand.",
     phonetic: "aɪ doʊnt ˌʌndərˈstænd",
   },
   {
@@ -99,7 +99,7 @@ export const enSentences: SentenceItem[] = [
     id: 14,
     name: "i_need_go_to_hospital",
     language: "en",
-    sentence: "I need go to hospital",
+    sentence: "I need to go to hospital",
     phonetic: "aɪ nid ɡoʊ tu ˈhɑːspɪtl",
   },
   {
@@ -125,10 +125,10 @@ export const enSentences: SentenceItem[] = [
   },
   {
     id: 18,
-    name: "could_can_take_a_picture_for_me",
+    name: "could_you_take_a_picture_for_me",
     language: "en",
-    sentence: "Could can take a picture for me?",
-    phonetic: "kʊd kæn teɪk ə ˈpɪkʧər fɔr mi",
+    sentence: "Could you take a picture for me?",
+    phonetic: "kʊd jʊ teɪk ə ˈpɪkʧər fɔr miː",
   },
   {
     id: 19,
