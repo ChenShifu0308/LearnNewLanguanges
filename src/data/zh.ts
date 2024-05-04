@@ -106,8 +106,8 @@ export const zhSentences: SentenceItem[] = [
     id: 15,
     name: "is_there_free_wifi_available",
     language: "zh",
-    sentence: "有免费的无线网络吗?",
-    phonetic: "yǒu miǎn fèi de wú xiàn wǎng luò ma?",
+    sentence: "有免费的Wifi吗?",
+    phonetic: "yǒu miǎn fèi de ˈwaɪˌfaɪ ma?",
   },
   {
     id: 16,
