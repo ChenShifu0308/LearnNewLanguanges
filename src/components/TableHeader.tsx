@@ -32,7 +32,7 @@ export default function TableHeader() {
 
 function TableHeaderItem({ children }: any) {
   return (
-    <th className="sticky top-0 z-10 bg-neutral-50 dark:bg-neutral-700 text-sm md:text-lg">
+    <th className="sticky top-0 z-10 bg-neutral-50 dark:bg-neutral-700 text-sm md:text-lg w-36 md:w-44 lg:w-60">
       {children}
     </th>
   );

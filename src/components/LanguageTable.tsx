@@ -5,7 +5,7 @@ import TableRows from "./TableRows";
 
 export default function LanguageTable() {
   return (
-    <div className="inline-block w-full h-full overflow-x-visible overflow-y-visible relative">
+    <div className=" w-full h-full overflow-x-scroll overflow-y-scroll relative">
       <table className="table-fixed">
         <thead>
           <tr>

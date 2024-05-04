@@ -13,6 +13,6 @@ export const useLanguageOption = create<LanguageOption>((set) => ({
     set({
       nativeLanguage,
     }),
-  learningLanguages: [],
+  learningLanguages: ["zh"],
   setLearningLanguages: (learningLanguages) => set({ learningLanguages }),
 }));

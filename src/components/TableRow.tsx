@@ -1,4 +1,5 @@
 import { SentenceItem } from "@/types/types";
+import Icon from "@mui/material/Icon";
 
 export default function TableRow(props: {
   nativeSentences: SentenceItem[];
@@ -11,23 +12,59 @@ export default function TableRow(props: {
   return (
     <tr>
       <th className="sticky z-1 left-0">
-        <TableHeaderItem>{nativeSentences[index].sentence}</TableHeaderItem>
+        <TableFirstItem>{nativeSentences[index].sentence}</TableFirstItem>
       </th>
       {sentences.map((sentence, itemIndex) => {
         return (
           <td>
-            <TableHeaderItem key={itemIndex}>{sentence[index].sentence}</TableHeaderItem>
+            <TableItem key={itemIndex}>
+              <WordItem word={sentence[index]} />
+            </TableItem>
           </td>
         );
       })}
     </tr>
   );
 }
-
-function TableHeaderItem({ children }: any) {
+function TableFirstItem({ children }: any) {
   return (
-    <div className="w-64 h-56 flex flex-col justify-center items-center bg-neutral-50 dark:bg-neutral-700">
+    <div className="w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center bg-neutral-50 dark:bg-neutral-700 p-2 my-4 mx-2">
       {children}
+    </div>
+  );
+}
+
+function TableItem({ children }: any) {
+  return (
+    <div className="w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center bg-neutral-50 dark:bg-neutral-700 p-2 my-4 mx-2 rounded-lg shadow-md hover:shadow-lg">
+      {children}
+    </div>
+  );
+}
+
+function WordItem(props: { word: SentenceItem }) {
+  const { word } = props;
+  return (
+    <div className="">
+      <div>{word.sentence}</div>
+      <div>{word.phonetic}</div>
+      <div
+        onClick={() => {
+          const audio = document.getElementById(
+            `/${word.language}/${word.id}_${word.name}.mp3`
+          );
+          audio?.play();
+        }}
+      >
+        <Icon style={{ fontSize: 25 }}>volume_up</Icon>
+        <audio hidden id={`/${word.language}/${word.id}_${word.name}.mp3`}>
+          <source
+            src={`/${word.language}/${word.id}_${word.name}.mp3`}
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
   );
 }

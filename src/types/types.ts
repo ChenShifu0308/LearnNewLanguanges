@@ -4,4 +4,5 @@ export type SentenceItem = {
   language: string;
   sentence: string;
   phonetic: string;
+  audio: string;
 };

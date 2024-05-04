@@ -26,7 +26,7 @@ export default function RootLayout({
           <ThemeProviders>
             <div className="w-full h-full md:max-w-7xl md:mx-auto">
               <NavBar />
-              <div className="h-[calc(100vh-88px)] max-w-7xl mx-auto">
+              <div className="h-[calc(100vh-88px)] w-full max-w-7xl mx-auto">
                 {children}
               </div>
             </div>
