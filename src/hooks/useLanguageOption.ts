@@ -9,7 +9,10 @@ export type LanguageOption = {
 
 export const useLanguageOption = create<LanguageOption>((set) => ({
   nativeLanguage: null,
-  setNativeLanguage: (nativeLanguage) => set({ nativeLanguage }),
+  setNativeLanguage: (nativeLanguage) =>
+    set({
+      nativeLanguage,
+    }),
   learningLanguages: [],
   setLearningLanguages: (learningLanguages) => set({ learningLanguages }),
 }));

@@ -1,3 +1,15 @@
 {
-  "slogan": "Travel the world in 20 sentences"
+  "slogan": "Travel the world in 20 sentences",
+  "native_language": "Native Language",
+  "en": "English",
+  "ar": "Arabic",
+  "zh": "Chinese",
+  "fr": "French",
+  "es": "Spanish",
+  "it": "Italian",
+  "pt": "Portuguese",
+  "ru": "Russian",
+  "ja": "Japanese",
+  "ko": "Korean",
+  "de": "German"
 }

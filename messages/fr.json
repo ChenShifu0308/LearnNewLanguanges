@@ -1,3 +1,15 @@
 {
-  "slogan": "Parcourez le monde en 20 phrases"
+  "slogan": "Parcourez le monde en 20 phrases",
+  "native_language": "Langue Maternelle",
+  "fr": "Français",
+  "ar": "Arabe",
+  "zh": "Chinois",
+  "en": "Anglais",
+  "de": "Allemand",
+  "es": "Espagnol",
+  "it": "Italien",
+  "pt": "Portugais",
+  "ru": "Russe",
+  "ja": "Japonais",
+  "ko": "Coréen"
 }

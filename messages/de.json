@@ -1,3 +1,15 @@
 {
-  "slogan": "Bereisen Sie die Welt in 20 Sätzen"
+  "slogan": "Bereisen Sie die Welt in 20 Sätzen",
+  "native_language": "Muttersprache",
+  "de": "Deutsch",
+  "ar": "Arabisch",
+  "zh": "Chinesisch",
+  "en": "Englisch",
+  "fr": "Französisch",
+  "es": "Spanisch",
+  "it": "Italienisch",
+  "pt": "Portugiesisch",
+  "ru": "Russisch",
+  "ja": "Japanisch",
+  "ko": "Koreanisch"
 }

@@ -1,4 +1,15 @@
 {
-    "slogan": "Viaja por el mundo en 20 oraciones"
-  }
-  
+  "slogan": "Viaja por el mundo en 20 oraciones",
+  "native_language": "Lengua Materna",
+  "es": "Español",
+  "ar": "Árabe",
+  "zh": "Chino",
+  "en": "Inglés",
+  "fr": "Francés",
+  "de": "Alemán",
+  "it": "Italiano",
+  "pt": "Portugués",
+  "ru": "Ruso",
+  "ja": "Japonés",
+  "ko": "Coreano"
+}

@@ -1,5 +1,6 @@
 "use client";
 import { selectOptions } from "@/data/languages";
+import { useLanguageOption } from "@/hooks/useLanguageOption";
 import { useLocale } from "next-intl";
 import { useTheme } from "next-themes";
 import { usePathname, useRouter } from "next/navigation";
@@ -13,11 +14,20 @@ export default function NativeLanguageSelect() {
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const { resolvedTheme } = useTheme();
+
   console.log("current locale:" + locale);
+  useLanguageOption.setState({ nativeLanguage: locale });
 
   const onSelectChange = (selectedLocale) => {
     console.log("selected locale:" + selectedLocale);
     console.log("pathname:" + pathname);
+    useLanguageOption.setState({ nativeLanguage: selectedLocale });
+    const previousLearningLanguages = useLanguageOption.getState().learningLanguages
+    useLanguageOption.setState({
+      learningLanguages: previousLearningLanguages.filter(
+        (lang) => lang !== selectedLocale
+      ),
+    });
 
     startTransition(() => {
       router.replace(pathname.replace(locale, selectedLocale));

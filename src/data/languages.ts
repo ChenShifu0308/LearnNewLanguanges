@@ -1,3 +1,6 @@
+import { SentenceItem } from "@/types/types";
+import { enSentences } from "./en";
+import { zhSentences } from "./zh";
 
 export enum Language {
   English = "en",
@@ -26,3 +29,14 @@ export const selectOptions = [
   { value: Language.Russian, label: "Russian" },
   { value: Language.Arabic, label: "Arabic" },
 ];
+
+export function getSentences(language: string): SentenceItem[] {
+  switch (language) {
+    case "en":
+      return enSentences;
+    case "zh":
+      return zhSentences;
+    default:
+      return [];
+  }
+}

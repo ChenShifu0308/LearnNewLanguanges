@@ -1,3 +1,15 @@
 {
-  "slogan": "Viaggia per il mondo in 20 frasi"
+  "slogan": "Viaggia per il mondo in 20 frasi",
+  "native_language": "Lingua Madre",
+  "it": "Italiano",
+  "en": "Inglese",
+  "zh": "Cinese",
+  "fr": "Francese",
+  "es": "Spagnolo",
+  "de": "Tedesco",
+  "pt": "Portoghese",
+  "ru": "Russo",
+  "ja": "Giapponese",
+  "ko": "Coreano",
+  "ar": "Arabo"
 }
