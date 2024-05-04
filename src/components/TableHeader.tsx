@@ -16,12 +16,12 @@ export default function TableHeader() {
 
   return (
     <>
-      <TableHeaderItem className="left-0">
+      {/* <TableHeaderItem className="left-0">
         {t("native_language")}
-      </TableHeaderItem>
-      {/* <th className="sticky top-0 left-0 z-20 bg-neutral-50 dark:bg-neutral-700 text-sm md:text-lg">
+      </TableHeaderItem> */}
+      <th className="sticky top-0 left-0 z-20 bg-neutral-50 dark:bg-[#424242] text-sm md:text-lg">
         {t("native_language")}
-      </th> */}
+      </th>
 
       {learningLanguages.map((language, index) => (
         <TableHeaderItem key={index}>
@@ -61,7 +61,7 @@ export default function TableHeader() {
 
 function TableHeaderItem({ children }: any) {
   return (
-    <th className="sticky top-0 z-10 bg-neutral-50 dark:bg-neutral-700 text-sm md:text-lg w-36 md:w-44 lg:w-60">
+    <th className="sticky top-0 z-10 bg-neutral-50 dark:bg-[#424242] text-sm md:text-lg w-36 md:w-44 lg:w-60">
       {children}
     </th>
   );

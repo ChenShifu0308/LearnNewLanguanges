@@ -1,6 +1,16 @@
 import { SentenceItem } from "@/types/types";
 import { enSentences } from "./en";
 import { zhSentences } from "./zh";
+import { esSentences } from "./es";
+import { frSentences } from "./fr";
+import { deSentences } from "./de";
+import { it } from "node:test";
+import { jaSentences } from "./ja";
+import { itSentences } from "./it";
+import { koSentences } from "./ko";
+import { ptSentences } from "./pt";
+import { ruSentences } from "./ru";
+import { arSentences } from "./ar";
 
 export enum Language {
   English = "en",
@@ -36,6 +46,24 @@ export function getSentences(language: string): SentenceItem[] {
       return enSentences;
     case "zh":
       return zhSentences;
+    case "es":
+      return esSentences;
+    case "fr":
+      return frSentences;
+    case "de":
+      return deSentences;
+    case "it":
+      return itSentences;
+    case "ja":
+      return jaSentences;
+    case "ko":
+      return koSentences;
+    case "pt":
+      return ptSentences;
+    case "ru":
+      return ruSentences;
+    case "ar":
+      return arSentences;
     default:
       return [];
   }

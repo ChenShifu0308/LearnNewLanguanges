@@ -11,7 +11,7 @@ export default function TableRow(props: {
   console.log("Sentences:" + sentences);
   return (
     <tr>
-      <th className="sticky z-1 left-0">
+      <th className="sticky z-1 left-0 dark:bg-[#424242] bg-[#fafafa]">
         <TableFirstItem>{nativeSentences[index].sentence}</TableFirstItem>
       </th>
       {sentences.map((sentence, itemIndex) => {
@@ -28,7 +28,7 @@ export default function TableRow(props: {
 }
 function TableFirstItem({ children }: any) {
   return (
-    <div className="text-sm md:text-lg w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center bg-neutral-50 dark:bg-neutral-700 p-2 my-4 mx-2">
+    <div className="text-sm md:text-lg w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center  bg-neutral-50 dark:bg-[#424242] p-2 my-4 mx-2">
       {children}
     </div>
   );
@@ -36,7 +36,7 @@ function TableFirstItem({ children }: any) {
 
 function TableItem({ children }: any) {
   return (
-    <div className="w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center bg-neutral-50 dark:bg-neutral-700 p-2 my-4 mx-2 rounded-lg shadow-md hover:shadow-lg">
+    <div className="w-36 md:w-44 lg:w-60 flex flex-col justify-center items-center bg-neutral-50 dark:bg-[#424242] p-2 my-4 mx-2 rounded-lg shadow-md hover:shadow-lg">
       {children}
     </div>
   );
