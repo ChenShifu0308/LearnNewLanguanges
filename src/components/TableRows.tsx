@@ -18,7 +18,6 @@ export default function TableRows() {
   });
   const native = nativeLanguage || "en";
   const nativeSentences = getSentences(native);
-  console.log("Native Sentences:" + nativeSentences);
 
   return nativeSentences.map((sentence, index) => {
     return (

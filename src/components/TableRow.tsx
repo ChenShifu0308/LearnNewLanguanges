@@ -7,8 +7,6 @@ export default function TableRow(props: {
   index: number;
 }) {
   const { nativeSentences, sentences, index } = props;
-  console.log("Native Sentences:" + nativeSentences);
-  console.log("Sentences:" + sentences);
   return (
     <tr>
       <th className="sticky z-1 left-0 dark:bg-[#424242] bg-[#fafafa]">
