@@ -44,11 +44,13 @@ function WordItem(props: { word: SentenceItem }) {
   const { word } = props;
   return (
     <div className="flex flex-col items-center gap-2 p-2">
-      <div className="text-sm md:text-lg">{word.sentence}</div>
+      <div className=" font-semibold placeholder:text-sm md:text-lg">
+        {word.sentence}
+      </div>
       <div className="flex gap-2 justify-center items-center">
-        <div>{`[${word.phonetic}]`}</div>
+        <div className="italic">{`[${word.phonetic}]`}</div>
         <div
-        className="flex items-center"
+          className="flex items-center"
           onClick={() => {
             const audio = document.getElementById(
               `/${word.language}/${word.id}_${word.name}.mp3`

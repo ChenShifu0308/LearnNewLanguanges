@@ -5,6 +5,7 @@ import Icon from "@mui/material/Icon";
 import { useTranslations } from "next-intl";
 import React from "react";
 import LanguageDialog from "./LanguageDialog";
+import { ClassNames } from "@emotion/react";
 
 /* The header has 2 column at first: The Native language, 
 and a "+" button to add more target language.
@@ -25,7 +26,7 @@ export default function TableHeader() {
 
       {learningLanguages.map((language, index) => (
         <TableHeaderItem key={index}>
-          <div className="flex items-center ">
+          <div className="flex items-center mx-4">
             <div className="self-center grow">{t(language)}</div>
             <div
               className="hover:scale-125  flex justify-center items-center"
