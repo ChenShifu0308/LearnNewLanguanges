@@ -3,6 +3,7 @@ import ThemeProviders from "@/providers/ThemeProvider";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             </div>
           </ThemeProviders>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
