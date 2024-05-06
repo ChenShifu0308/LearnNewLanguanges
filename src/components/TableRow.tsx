@@ -14,8 +14,8 @@ export default function TableRow(props: {
       </th>
       {sentences.map((sentence, itemIndex) => {
         return (
-          <td>
-            <TableItem key={itemIndex}>
+          <td key={itemIndex}>
+            <TableItem>
               <WordItem word={sentence[index]} />
             </TableItem>
           </td>
@@ -52,10 +52,10 @@ function WordItem(props: { word: SentenceItem }) {
         <div
           className="flex items-center"
           onClick={() => {
-            const audio = document.getElementById(
+            let audio = document.getElementById(
               `/${word.language}/${word.id}_${word.name}.mp3`
             );
-            audio?.play();
+            (audio as HTMLAudioElement)?.play();
           }}
         >
           <Icon style={{ fontSize: 20 }}>volume_up</Icon>
