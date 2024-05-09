@@ -8,8 +8,6 @@ import { useTheme } from "next-themes";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
-    // primary: grey,
-    // divider: grey[200],
     background: {
       default: grey[800],
       paper: grey[800],
@@ -23,8 +21,6 @@ const darkTheme = createTheme({
 const lightTheme = createTheme({
   palette: {
     mode: "light",
-    // primary: grey,
-    // divider: grey[700],
     background: {
       default: grey[50],
       paper: grey[50],
@@ -38,6 +34,7 @@ const lightTheme = createTheme({
 /* A wrapper for MUI ThemeProvider to be compatible with next-themes */
 export default function MuiThemeProvider({ children }: any) {
   const { resolvedTheme } = useTheme();
+  console.log("resolvedTheme"+ resolvedTheme);
   return (
     <ThemeProvider theme={resolvedTheme == "dark" ? darkTheme : lightTheme}>
       <CssBaseline />
