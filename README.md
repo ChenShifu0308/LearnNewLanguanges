@@ -139,7 +139,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 - [x] Multi-language Support.
 - [ ] Fix the dark mode issue, when switching to dark mode and reopen the website, the text color is not correct.
-- [ ] 
+- [ ] Add used libraries to the readme.
  
 
 ## References
